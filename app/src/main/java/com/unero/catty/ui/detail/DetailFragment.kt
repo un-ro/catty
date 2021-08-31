@@ -1,23 +1,23 @@
-package com.unero.catty.ui.home
+package com.unero.catty.ui.detail
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.unero.catty.databinding.FragmentHomeBinding
+import com.unero.catty.databinding.FragmentDetailBinding
 
-class HomeFragment : Fragment() {
+class DetailFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-    private val binding get() = _binding!!
+    private var _binding: FragmentDetailBinding? = null
+    private val binding get() =  _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding =  FragmentHomeBinding.inflate(inflater, container, false)
+        _binding =  FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
