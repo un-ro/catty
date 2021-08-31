@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.unero.catty.adapter.CatAdapter
+import com.unero.catty.data.ObjectGenerator
 import com.unero.catty.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -19,6 +21,15 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding =  FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val list = ObjectGenerator.catList
+        val rv = binding.rvCats
+        rv.adapter = CatAdapter(list)
+        rv.setHasFixedSize(true)
     }
 
     override fun onDestroyView() {
