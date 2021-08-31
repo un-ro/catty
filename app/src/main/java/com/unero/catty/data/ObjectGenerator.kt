@@ -126,4 +126,45 @@ object ObjectGenerator {
             return list
         }
 
+    // Education
+    private val schoolNames = arrayOf(
+        "Politeknik Negeri Malang",
+        "Bangkit 2021",
+        "SIB Dicoding 2021"
+    )
+
+    private val schoolCourses = arrayOf(
+        "Teknik Informatika",
+        "Mobile development",
+        "Multiplatform"
+    )
+
+    private val schoolDates = arrayOf(
+        "September 2018 - 2022 (Current)",
+        "Februari 2021 - July 2021",
+        "August 2021 - January 2022 (Current)"
+    )
+
+    private val schoolPhoto = arrayOf(
+        R.drawable.education1,
+        R.drawable.education2,
+        R.drawable.education3,
+    )
+
+
+    val educationList: ArrayList<Education>
+        get() {
+            val list = arrayListOf<Education>()
+            for (position in schoolNames.indices) {
+                val education = Education(
+                    schoolPhoto[position],
+                    schoolNames[position],
+                    schoolDates[position],
+                    schoolCourses[position]
+                )
+                list.add(education)
+            }
+            return list
+        }
+
 }

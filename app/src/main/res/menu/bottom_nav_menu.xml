@@ -11,4 +11,9 @@
         android:icon="@drawable/profile_selector"
         android:title="@string/title_profile" />
 
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/ic_info"
+        android:title="@string/title_info" />
+
 </menu>
