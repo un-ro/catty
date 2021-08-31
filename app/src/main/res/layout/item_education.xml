@@ -16,6 +16,7 @@
             android:id="@+id/iv_school"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:contentDescription="@string/school_logo"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -25,6 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             tools:text="Politeknik Negeri Malang"
+            android:fontFamily="@font/poppins_light"
             android:textSize="24sp"
             android:textStyle="bold"
             android:ellipsize="end"
@@ -39,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Teknologi Informasi"
+            android:fontFamily="@font/poppins_light"
             android:layout_marginTop="2dp"
             app:layout_constraintTop_toBottomOf="@id/tv_school"
             app:layout_constraintStart_toStartOf="@id/tv_school" />
@@ -48,6 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="September 2021 - Desember 2021"
+            android:fontFamily="@font/poppins_light"
             app:layout_constraintBottom_toBottomOf="@id/iv_school"
             app:layout_constraintStart_toEndOf="@id/iv_school"
             android:layout_margin="8dp"/>

@@ -10,5 +10,17 @@
     <string name="lbl_education">Education History</string>
     <string name="tv_email">ramadhanbhg@gmail.com</string>
     <string name="tv_name">Unero Bhagaskara Ramadhan Marbun</string>
+    <string name="lbl_thx_icon">Icon</string>
+    <string name="lbl_thx_data">Data</string>
+    <string name="lbl_size_weight">Size and Weight</string>
+    <string name="lbl_overview">Overview</string>
+    <string name="lbl_history">History</string>
+    <string name="cat_photo">Cat Photo</string>
+    <string name="school_logo">School Logo</string>
+    <string name="purina">PURINA</string>
+    <string name="wikipedia">WIKIPEDIA</string>
+    <string name="flaticon">Flaticon</string>
+    <string name="flatpak">Flatpak</string>
+    <string name="logo_app">Logo App</string>
 
 </resources>

@@ -24,6 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
+                android:fontFamily="@font/cedarville_cursive"
                 style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
                 android:layout_gravity="center"/>
 
@@ -58,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_email"
+        android:fontFamily="@font/poppins_light"
         app:layout_constraintTop_toBottomOf="@id/tv_name"
         app:layout_constraintStart_toStartOf="@id/tv_name"/>
 
@@ -66,6 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lbl_education"
+        android:fontFamily="@font/poppins_light"
         android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@id/iv_photo"
