@@ -1,6 +1,7 @@
 package com.unero.catty
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -22,5 +23,12 @@ class MainActivity : AppCompatActivity() {
 
         navView.itemIconTintList = null
         navView.setupWithNavController(navController)
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.navigation_home -> navView.visibility = View.VISIBLE
+                R.id.navigation_profile -> navView.visibility = View.VISIBLE
+                else -> navView.visibility = View.GONE
+            }
+        }
     }
 }

@@ -2,9 +2,11 @@ package com.unero.catty.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.unero.catty.data.Cat
 import com.unero.catty.databinding.ItemCatBinding
+import com.unero.catty.ui.home.HomeFragmentDirections
 
 class CatAdapter(private val list: ArrayList<Cat>): RecyclerView.Adapter<CatAdapter.CatViewHolder>() {
 
@@ -14,6 +16,11 @@ class CatAdapter(private val list: ArrayList<Cat>): RecyclerView.Adapter<CatAdap
                 ivThumbnail.setImageResource(cat.thumbnail)
                 ivThumbnail.contentDescription = cat.breed
                 tvBreed.text = cat.breed
+
+                root.setOnClickListener {
+                    val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(cat)
+                    it.findNavController().navigate(action)
+                }
             }
         }
     }
